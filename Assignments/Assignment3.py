@@ -1,5 +1,6 @@
 # questtion1
 
+
 def multiplication(parameter1, parameter2):
     return parameter1*parameter2
 
@@ -43,7 +44,6 @@ print(type(a))  # <class 'str'>
 s = "hello"
 s = s + " world" 
 print (s)
-
 
 
 
