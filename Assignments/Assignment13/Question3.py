@@ -11,8 +11,10 @@ def PerfectNo(No):
 
 def main():
     No = int(input("Enter a No: "))
-    if PerfectNo(No):
-        print("Number is perfect NO")
+    ret = PerfectNo(No)
+
+    if(ret):
+        print("Number is perfect ")
     else:
         print("Number is not perfect no")
 
