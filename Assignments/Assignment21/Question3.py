@@ -8,6 +8,7 @@ def Update():
     global iCnt
     with lobj:
         iCnt = iCnt + 1
+        print(iCnt)
 
 def main():
     global iCnt
