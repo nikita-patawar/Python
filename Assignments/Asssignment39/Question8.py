@@ -49,6 +49,8 @@ print("Result set shape", Y_test.shape)
 print(Border)
  
 print("We are going to use Decission Tree Classifier with max depth 1")
+
+print("Model training")
  
 model = DecisionTreeClassifier(
                 criterion="gini",
@@ -61,8 +63,19 @@ print("Model created successfully!", model)
 model.fit(X_train, Y_train)
 print("Model trained Completed!")
 
-Y_pred = model.predict(X_test)
- 
-print("Model Evaluation(testing) complete")
+print(Border)
 
+print("Model evaluation")
+Y_pred = model.predict(X_test)
+print("Model Evaluation(testing) complete")
+print(Border)
+
+print("Accuracy calculator")
+accuracy = accuracy_score(Y_test, Y_pred)
+print("Accuracy of the model:", accuracy*100)
+
+print("Confusion Matrix")
+cm = confusion_matrix(Y_test,Y_pred)
+print("Confusion matrix: "),
+print(cm)
 
