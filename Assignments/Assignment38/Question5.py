@@ -9,3 +9,7 @@ precentage = df["FinalResult"].value_counts(normalize=100)*100
 print("count :\n",count)
 print("precentage :\n",precentage)
 print("Data is Acceptable")
+
+
+
+print("end")
